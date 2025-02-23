@@ -1,0 +1,172 @@
+body {
+    background-image: url(../img/812.jpg);
+
+    header nav {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #0b4aa9;
+        padding: 10px 30px;
+        border-bottom: 2px solid #181616;
+
+    }
+}
+
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+header .menu {
+    list-style: none;
+    display: flex;
+
+    gap: 15px;
+}
+
+header .menu li {
+    display: inline;
+}
+
+header .menu a {
+    text-decoration: none;
+    color: white;
+}
+
+header .profile {
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+header .profile input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+header span {
+    color: rgb(254 206 120);
+}
+
+header .profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+
+header img {
+    width: 50px;
+}
+
+input[type="search"] {
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 25px;
+    padding: 12px 20px;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+aside h1 {
+    color: #ffffff;
+}
+aside {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 20px;
+}
+
+.search-item {
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.search-item:hover {
+    transform: translateX(10px);
+    background: #fff;
+}
+#searchResults {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+.fz-gh {
+    transition: all 0.3s ease;
+}
+.search-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+fieldset {
+    border: 2px solid #008080;
+    background-color:rgba(255, 250, 240, 0.24);
+    padding: auto;
+    margin: auto;
+    border-radius: 10px;
+    border-bottom: 3px solid #ffffff;
+}
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+ color: #ffffff;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+.fz-gh{
+    border-bottom: 1px solid #0932ff;
+    padding-bottom: 5px;
+    
+}
